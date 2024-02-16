@@ -1,0 +1,33 @@
+.hero-img {
+    max-width: 330px;
+}
+
+ul.legal-links {
+    list-style: none;
+    width: 100%;
+}
+
+ul.legal-links li a {
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 21.6px;
+    font-weight: 400;
+}
+
+.text-fade {
+    color: var(--si-body-color);
+}
+
+/*media query for devices less then 991px */
+@media (max-width: 991.98px) {
+    .hero-img {
+        max-width: 190px;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .mission-img {
+        max-width: 505px;
+    }
+}
