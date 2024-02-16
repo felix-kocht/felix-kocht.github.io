@@ -518,52 +518,49 @@
       <div class="container position-relative zindex-2 pt-5">
         <div class="row">
           <!-- Contact form -->
-          <div class="col-xl-12 col-lg-12">
-            <div class="card border-light shadow-lg py-3 p-sm-4 p-md-5">
-              <div class="bg-dark position-absolute top-0 start-0 w-100 h-100 rounded-3 d-none d-dark-mode-block"></div>
-              <div class="card-body position-relative zindex-2">
-                <h2 class="card-title pb-3 mb-4">Contact Us</h2>
-                <div class="row">
-                  <div class="col-12 col-lg-6">
-                    <form class="row g-4 needs-validation" novalidate="">
-                      <div class="col-sm-6">
-                        <label for="date" class="form-label fs-base">First Name</label>
-                        <input type="text" class="form-control form-control-lg" id="date"
-                          data-format="{&quot;date&quot;: true, &quot;datePattern&quot;: [&quot;m&quot;, &quot;d&quot;]}"
-                          placeholder="First Name*" required="">
-                        <div class="invalid-feedback">Enter a date!</div>
-                      </div>
-                      <div class="col-sm-6">
-                        <label for="time" class="form-label fs-base">Last Name</label>
-                        <input type="text" class="form-control form-control-lg" id="time"
-                          data-format="{&quot;time&quot;: true, &quot;timePattern&quot;: [&quot;h&quot;, &quot;m&quot;]}"
-                          placeholder="Last Name*" required="">
-                        <div class="invalid-feedback">Enter a time!</div>
-                      </div>
-                      <div class="col-12">
-                        <label for="email" class="form-label fs-base">Email address</label>
-                        <input type="email" placeholder="Email Address*" class="form-control form-control-lg" id="email"
-                          required="">
-                        <div class="invalid-feedback">Please provid a valid email address!</div>
-                      </div>
-                      <div class="col-12">
-                        <label for="email" class="form-label fs-base">Email address</label>
-                        <textarea class="form-control form-control-lg" rows="8"></textarea>
-                        <div class="invalid-feedback">Please provid a valid email address!</div>
-                      </div>
-
-                      <div class="col-12 pt-2 pt-sm-3">
-                        <button type="submit" class="btn btn-lg btn-primary w-100 w-sm-auto">Send</button>
-                      </div>
-                    </form>
-                  </div>
-                  <div class="d-none d-lg-block col-12 col-lg-5 " style="margin-top: -75px;margin-left: 1rem;">
-                    <img src="assets/img/landing/form-side-img.png" width="480" alt="">
-                  </div>
-                </div>
-              </div>
+<div class="col-xl-12 col-lg-12">
+  <div class="card border-light shadow-lg py-3 p-sm-4 p-md-5">
+    <div class="bg-dark position-absolute top-0 start-0 w-100 h-100 rounded-3 d-none d-dark-mode-block"></div>
+    <div class="card-body position-relative zindex-2">
+      <h2 class="card-title pb-3 mb-4">Contact Us</h2>
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <!-- Update action attribute to your Formspree URL and method to POST -->
+          <form class="row g-4 needs-validation" action="https://formspree.io/f/xrgnqajd" method="POST" novalidate>
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label fs-base">First Name</label>
+              <input type="text" class="form-control form-control-lg" name="firstName" id="firstName" placeholder="First Name*" required>
+              <div class="invalid-feedback">Enter your first name!</div>
             </div>
-          </div>
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label fs-base">Last Name</label>
+              <input type="text" class="form-control form-control-lg" name="lastName" id="lastName" placeholder="Last Name*" required>
+              <div class="invalid-feedback">Enter your last name!</div>
+            </div>
+            <div class="col-12">
+              <label for="email" class="form-label fs-base">Email address</label>
+              <input type="email" placeholder="Email Address*" class="form-control form-control-lg" name="email" id="email" required>
+              <div class="invalid-feedback">Please provide a valid email address!</div>
+            </div>
+            <div class="col-12">
+              <label for="message" class="form-label fs-base">Message</label>
+              <textarea class="form-control form-control-lg" name="message" id="message" rows="8" required></textarea>
+              <div class="invalid-feedback">Please provide a message!</div>
+            </div>
+
+            <div class="col-12 pt-2 pt-sm-3">
+              <button type="submit" class="btn btn-lg btn-primary w-100 w-sm-auto">Send</button>
+            </div>
+          </form>
+        </div>
+        <div class="d-none d-lg-block col-12 col-lg-5" style="margin-top: -75px; margin-left: 1rem;">
+          <img src="assets/img/landing/form-side-img.png" width="480" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
         </div>
       </div>
       <div class="position-absolute bottom-0 start-0 w-100 bg-light" style="height: 8rem;"></div>
