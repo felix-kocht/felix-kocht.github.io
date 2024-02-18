@@ -5054,7 +5054,10 @@ fieldset:disabled .btn {
     word-wrap: break-word;
     background-color: var(--si-card-bg);
     background-clip: border-box;
-    border: var(--si-card-border-width) solid var(--si-card-border-color);
+    border: none 
+    /* // BEGIN: ed8c6549bwf9
+        var(--si-card-border-width) solid var(--si-card-border-color);
+        */
     border-radius: var(--si-card-border-radius);
     box-shadow: var(--si-card-box-shadow)
 }
