@@ -1,0 +1,54 @@
+body {
+    background-color: #121212;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+input, button {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #444;
+    padding: 10px;
+    margin: 5px;
+}
+
+input {
+    background-color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: none; /* Make table borders invisible */
+}
+
+td, th {
+    border: none; /* Make cell borders invisible */
+    text-align: left;
+    padding: 8px;
+}
+
+h2 {
+    margin-top: 20px;
+    font-size: 24px; /* Keep cumulative scores font size big */
+}
+
+h3 {
+    margin-top: 20px;
+}
+
+/* Use light blue as accent color for buttons and links */
+button, a {
+    background-color: #007bff; /* Light blue background */
+    color: #fff; /* White text */
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px; /* Optional: rounded corners for buttons/links */
+}
+
+/* Additional styling for input focus to match the accent color */
+input:focus {
+    border-color: #007bff;
+    outline: none; /* Remove default focus outline */
+}

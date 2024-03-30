@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Player Scores</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="playerInputs">
+        <!-- Player input fields will be added here dynamically -->
+    </div>
+    <button onclick="submitScores()">Submit Scores</button>
+    <button id="removeLine">Remove Last Line</button>
+    <button id="newRound">New Round</button>
+    <button id="downloadResults">Download Results</button>
+
+
+    <h2>Cumulative Scores</h2>
+    <div id="cumulativeScores">
+        <!-- Cumulative scores will be displayed here -->
+    </div>
+
+    <h3>Score History</h3>
+    <table id="scoreHistory">
+        <thead>
+            <tr>
+                <!-- Table headers will be added here dynamically -->
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Score history will be added here -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
