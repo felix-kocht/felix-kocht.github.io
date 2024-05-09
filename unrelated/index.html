@@ -2,23 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Player Scores</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="playerInputs">
-        <!-- Player input fields will be added here dynamically -->
+    <div id="mainContent">
+        <div id="playerInputs">
+            <input type="number"/>
+            <!-- Player input fields will be added here dynamically -->
+        </div>
+        <div id="cumulativeScoresWrapper">
+            <h2>Total:</h2>
+            <div id="cumulativeScores">
+                <!-- Cumulative scores will be displayed here -->
+            </div>
+        </div>
     </div>
     <button onclick="submitScores()">Submit Scores</button>
     <button id="removeLine">Remove Last Line</button>
     <button id="newRound">New Round</button>
     <button id="downloadResults">Download Results</button>
-
-
-    <h2>Cumulative Scores</h2>
-    <div id="cumulativeScores">
-        <!-- Cumulative scores will be displayed here -->
-    </div>
 
     <h3>Score History</h3>
     <table id="scoreHistory">
@@ -32,6 +36,6 @@
         </tbody>
     </table>
 
-    <script src="script.js"></script>
+    <script src="script2.js"></script>
 </body>
 </html>
