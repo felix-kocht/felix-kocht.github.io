@@ -52,3 +52,26 @@ input:focus {
     border-color: #007bff;
     outline: none; /* Remove default focus outline */
 }
+
+/* Style the parent container for horizontal layout */
+#mainContent {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px; /* Adjust according to your layout needs */
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* Style the player input and cumulative score sections */
+#playerInputs {
+    flex: 1;
+    margin-right: 16px;
+}
+
+#cumulativeScoresWrapper {
+    flex: 1;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
