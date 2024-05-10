@@ -1,0 +1,4 @@
+prompt numblock keyboard even on iphone
+zoom in on page automatically (size to fit)
+Player joining / leaving?
+grey out fields if someone is sitting out to avoid mistakes
