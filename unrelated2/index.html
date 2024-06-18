@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Scores</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Schafkopf Scorekeeper</h1>
+            <h5>Check the box for whoever player sits out</h5>
+        </header>
+        <main>
+            <div id="cumulativeScoresWrapper">
+                <h3>Total Scores:</h3>
+                <div id="cumulativeScores"></div>
+            </div>
+            <div id="playerInputs" class="input-group"></div>
+        </main>
+        <footer>
+           <!-- Updated button classes for submit scores button -->
+            <button onclick="submitScores()" class="submit-scores">Submit Scores</button>
+            <button id="removeLine">Remove Last Line</button>
+            <button id="newRound">New Round</button>
+            <button id="downloadResults">Download Results</button>
+            <button id="yellowCard">Yellow Card</button>
+            <h3>Score History</h3>
+            <table id="scoreHistory">
+                <thead>
+                    <tr></tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </footer>
+    </div>
+    <script src="script2.js"></script>
+</body>
+</html>
