@@ -297,3 +297,4 @@ document.getElementById('downloadResults').addEventListener('click', function() 
     link.click();
     document.body.removeChild(link);
 });
+
