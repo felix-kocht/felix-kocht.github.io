@@ -1,0 +1,177 @@
+/* General body styling */
+body {
+    background-color: #121212;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* Prevent body scroll */
+}
+
+/* Container styling */
+.container {
+    width: 90%;
+    max-width: 400px;
+    background: #1e1e1e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px;
+    overflow-y: auto; /* Allow container to scroll */
+    max-height: 100vh; /* Ensure container fits within the viewport */
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    padding-bottom: 10px; /* Reduced padding */
+}
+
+header h1 {
+    margin: 0.5em 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header h5 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+/* Player entry section styling */
+.player-entry {
+    text-align: center;
+    margin-bottom: 10px; /* Reduced margin */
+}
+
+.player-entry h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.player-entry input {
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    margin-bottom: 10px;
+}
+
+/* Button styling */
+footer button {
+    background-color: #6c757d; /* Neutral color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+footer button:hover {
+    background-color: #5a6268; /* Darker neutral color */
+}
+
+footer button.submit-scores {
+    background-color: #007bff; /* Accent color */
+}
+
+footer button.submit-scores:hover {
+    background-color: #0056b3;
+}
+
+footer button#yellowCard {
+    background-color: #6c757d; /* Neutral color */
+}
+
+/* Main content styling */
+main {
+    margin-top: 10px; /* Reduced margin */
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Adjust spacing between rows as needed */
+}
+
+.input-group .player-entry {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjust spacing between elements as needed */
+}
+
+.input-group .player-entry input[type="checkbox"] {
+    margin-right: 5px; /* Adjust as needed */
+    width: 20px; /* Adjust width as needed */
+}
+
+.input-group .player-entry span {
+    flex-grow: 1;
+}
+
+.input-group .player-entry input[type="number"] {
+    width: 50px; /* Adjust width as needed */
+}
+
+.input-group .player-entry .yellowCardSpan {
+    margin-left: 10px; /* Adjust as needed */
+}
+
+/* Cumulative scores styling */
+#cumulativeScoresWrapper {
+    margin-top: 0px; /* Reduced margin */
+    background-color: #2e2e2e;
+    padding: 10px; /* Reduced padding */
+    border-radius: 8px;
+}
+
+#cumulativeScores {
+    font-size: 1.2em;
+}
+
+/* Footer styling */
+footer {
+    margin-top: 10px; /* Reduced margin */
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #444;
+    text-align: left;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #2e2e2e;
+}
+
+tbody tr:hover {
+    background-color: #444;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    main, footer {
+        padding: 0.5em;
+    }
+}
