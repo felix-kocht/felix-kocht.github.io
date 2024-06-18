@@ -47,9 +47,10 @@ function initializeUI() {
         const playerNameSpan = document.createElement('span');
         playerNameSpan.textContent = ` ${player}`;
 
-        playerInputs.appendChild(input);
+        
         playerInputs.appendChild(checkbox);
         playerInputs.appendChild(playerNameSpan);
+        playerInputs.appendChild(input);
         playerInputs.appendChild(document.createElement('br'));
 
         // Add header for each player in score history table
