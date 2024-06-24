@@ -55,7 +55,7 @@ function initializeUI() {
         const input = document.createElement('input');
         input.type = 'number';
         input.id = `player${index}`;
-        input.value = '0';
+        input.value = '';
         input.placeholder = `${player}'s profit/loss`;
 
         // Create a checkbox to mark a player as sitting out
@@ -264,7 +264,7 @@ function updateTableAndScores(sittingOutIndices) {
         }
 
         // Reset input field to default only for non-sitting-out players
-        input.value = '0';
+        input.value = '';
     });
 
     scoreHistoryBody.appendChild(row);
